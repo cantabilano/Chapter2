@@ -28,6 +28,7 @@ class UserAccount {
         didSet {
             if loginAttempts >= 3 {
                 print("로그인 시도가 3회 이상 실패하였습니다. 계정이 잠겼습니다.")
+                print("branch switch후 dev에 반영여부 확인")
                 lockAccount()
             }
         }
