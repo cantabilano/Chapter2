@@ -26,7 +26,7 @@ class UserAccount {
         // 변수에 프로퍼티 옵저버를 정의하여 프로퍼티 값의 변경사항을 모니터링(값을 계속 넣는다), 미리 구현한 코드로 대응
         // 변경사항이 발생할 때 실행된다.
         didSet {
-            if loginAttempts >= 3 {
+            if loginAttempts >= 5 {
                 print("로그인 시도가 3회 이상 실패하였습니다. 계정이 잠겼습니다.")
                 lockAccount()
             }
