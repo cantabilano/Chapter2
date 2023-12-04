@@ -27,7 +27,8 @@ class UserAccount {
         // 변경사항이 발생할 때 실행된다.
         didSet {
             if loginAttempts >= 5 {
-                print("로그인 시도가 3회 이상 실패하였습니다. 계정이 잠겼습니다.")
+                print("로그인 시도가 5회 이상 실패하였습니다. 계정이 잠겼습니다.")
+                print("Dev가 반영되었나요>?")
                 lockAccount()
             }
         }
